@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(103, 207, 173);
+}
+
+h3 { 
+  color: black;
+  font-size: 3rem;
+  font-style: italic;
+  align-self: center;
+  text-align: center;
+}
+
+
+h1 {
+	font-family: 'Corben', cursive;
+	font-size: 6rem;
+	color: white;
+	letter-spacing: 0.1rem;
+	text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
+}
+
+.logo {
+  width: 4rem;
+}
+
+.texto {
+  width: 100%;
+}
+
+h2 {
+  width: 42%;
+  color: black;
+  font-style: italic;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+img {
+  width: 90%;
+  margin: 5%; } 
+
+
+video {
+  position: center;
+  width: 90%;
+  display:grid;
+  align-self: auto;
+  margin: 5%
+
+}
+audio {
+  position: relative;
+  top: 0; left: 7%;
+}
+
+
+
+.cubo3D {
+  position: relative;
+  display: table-cell;
+  width: 1000px;
+  height: 1300px;
+  transform-style: preserve-3d;
+  animation: girarCubo 4s infinite linear;
+}
+
+.cara {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color:ghostwhite;
+  opacity: 0.8;
+  border: 1px solid #000;
+}
+
+.cara1 { transform: translateZ(100px); }
+.cara2 { transform: rotateY(90deg) translateZ(100px); }
+.cara3 { transform: rotateY(180deg) translateZ(100px); }
+.cara4 { transform: rotateY(-90deg) translateZ(100px); }
+.cara5 { transform: rotateX(90deg) translateZ(100px); }
+.cara6 { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes girarCubo {
+  0% { transform: rotateX(0) rotateY(0); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+@MEDIA (MIN-WIDTH: 768PX) {
+  .ITEM {
+    WIDTH: 50%;
+    FONT-SIZE: 1.5REM;
+  }
+}
+
+@MEDIA (MIN-WIDTH: 1024PX) {
+  .ITEM {
+    WIDTH: 33.33%;
+    FONT-SIZE: 1REM;
+  }
+}

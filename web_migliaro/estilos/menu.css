@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+  }
+
+  h1 {
+    color: black;
+    font-size: 30px;
+  }
+
+  ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    color: black
+  }
+
+  a{
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(179, 72, 170);
+    outline-color: black;
+  }
+
+  h1 {
+    font-family: 'Corben', cursive;
+    font-size: 6rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
+  }
